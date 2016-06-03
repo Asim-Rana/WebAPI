@@ -1,0 +1,5 @@
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\ClinicalAPI.Domain\bin\Debug\ClinicalAPI.Domain.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\ClinicalAPI.Domain\bin\Debug\ClinicalAPI.Domain.pdb
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\ClinicalAPI.Domain\obj\Debug\ClinicalAPI.DAL.csprojResolveAssemblyReference.cache
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\ClinicalAPI.Domain\obj\Debug\ClinicalAPI.Domain.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\ClinicalAPI.Domain\obj\Debug\ClinicalAPI.Domain.pdb

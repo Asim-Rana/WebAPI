@@ -1,0 +1,10 @@
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalAPI\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
