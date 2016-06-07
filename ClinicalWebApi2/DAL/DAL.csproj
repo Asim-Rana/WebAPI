@@ -61,11 +61,13 @@
     <Compile Include="Helpers\IUnitOfWork.cs" />
     <Compile Include="Mappings\AssistantMap.cs" />
     <Compile Include="Mappings\DiseaseMap.cs" />
+    <Compile Include="Mappings\FeedBackMap.cs" />
     <Compile Include="Mappings\MedicineMap.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Services\AppointmentService.cs" />
     <Compile Include="Services\AssistantService.cs" />
     <Compile Include="Services\DoctorService.cs" />
+    <Compile Include="Services\FeedBackService.cs" />
     <Compile Include="Services\PatientHistoryService.cs" />
     <Compile Include="Services\PatientService.cs" />
     <Compile Include="Mappings\AppointmentMap.cs" />

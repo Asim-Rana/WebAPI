@@ -7,3 +7,7 @@ C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\DTO\b
 C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\DTO\bin\Debug\DTO.pdb
 C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\DTO\obj\Debug\DTO.dll
 C:\Users\asim.irshad\Documents\Visual Studio 2015\Projects\ClinicalWebApi2\DTO\obj\Debug\DTO.pdb
+C:\Users\asim.irshad\Documents\GitHub\WebAPI\ClinicalWebApi2\DTO\bin\Debug\DTO.dll
+C:\Users\asim.irshad\Documents\GitHub\WebAPI\ClinicalWebApi2\DTO\bin\Debug\DTO.pdb
+C:\Users\asim.irshad\Documents\GitHub\WebAPI\ClinicalWebApi2\DTO\obj\Debug\DTO.dll
+C:\Users\asim.irshad\Documents\GitHub\WebAPI\ClinicalWebApi2\DTO\obj\Debug\DTO.pdb

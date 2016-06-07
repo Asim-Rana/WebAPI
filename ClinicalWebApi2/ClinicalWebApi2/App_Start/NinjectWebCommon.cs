@@ -9,6 +9,7 @@ namespace ClinicalWebApi2.App_Start
     using ClinicalWebApi2.DAL.Helpers;
     using ClinicalWebApi2.DAL.Repositories;
     using ClinicalWebApi2.DAL.Services;
+    using global::DAL.Services;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
@@ -66,6 +67,7 @@ namespace ClinicalWebApi2.App_Start
         {
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
             kernel.Bind<IDoctorService>().To<DoctorService>();
+            kernel.Bind<IFeedBackService>().To<FeedBackService>();
             kernel.Bind<IPatientService>().To<PatientService>();
             kernel.Bind<IAppointmentService>().To<AppointmentService>();
             kernel.Bind<IAssistantService>().To<AssistantService>();
@@ -75,6 +77,7 @@ namespace ClinicalWebApi2.App_Start
             kernel.Bind<IRepository<Appointment>>().To<Repository<Appointment>>();
             kernel.Bind<IRepository<PatientHistory>>().To<Repository<PatientHistory>>();
             kernel.Bind<IRepository<Assistant>>().To<Repository<Assistant>>();
+            kernel.Bind<IRepository<FeedBack>>().To<Repository<FeedBack>>();
         }        
     }
 }

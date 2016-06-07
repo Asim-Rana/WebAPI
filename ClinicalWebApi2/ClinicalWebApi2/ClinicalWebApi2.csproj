@@ -279,6 +279,7 @@
     <Compile Include="Controllers\AppointmentController.cs" />
     <Compile Include="Controllers\AssistantController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\FeedBackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatientController.cs" />
     <Compile Include="Controllers\PatientHistoryController.cs" />

@@ -45,6 +45,7 @@
     <Compile Include="Assistant.cs" />
     <Compile Include="Disease.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="FeedBack.cs" />
     <Compile Include="Medicine.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="PatientHistory.cs" />
