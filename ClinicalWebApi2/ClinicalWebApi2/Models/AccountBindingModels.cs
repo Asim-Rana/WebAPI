@@ -110,6 +110,7 @@ namespace ClinicalWebApi2.Models
         public string Education { get; set; }
         public string Speciality { get; set; }
         public int Age { get; set; }
+        public string Gender { get; set; }
         [Required(ErrorMessage = "Please Enter Your Address")]
         public string Address { get; set; }
         [Required(ErrorMessage = "Please Enter Your Contact No")]

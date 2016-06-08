@@ -90,6 +90,7 @@ namespace ClinicalWebApi2.DAL.Services
             pat.Name = patient.Name;
             pat.Phone = patient.Phone;
             pat.Address = patient.Address;
+            pat.Gender = patient.Gender;
             if(!_patientRepository.Update(pat))
             {
                 return 1;

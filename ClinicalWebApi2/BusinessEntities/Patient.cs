@@ -28,6 +28,9 @@ namespace ClinicalWebApi2.BusinessEntities
         [Required(ErrorMessage = "Please Enter Your Address")]
         [DataType(DataType.Text)]
         public virtual string Address { get; set; }
+        [Required(ErrorMessage = "Please Enter Your Gender")]
+        [DataType(DataType.Text)]
+        public virtual string Gender { get; set; }
 
         public virtual IList<PatientHistory> CheckupHistory
         {

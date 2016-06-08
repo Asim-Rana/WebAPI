@@ -17,6 +17,7 @@ namespace ClinicalWebApi2.DAL.Mappings
             Map(x => x.Phone).Not.Nullable().Unique();
             Map(x => x.Age).Not.Nullable();
             Map(x => x.Address).Not.Nullable();
+            Map(x => x.Gender).Not.Nullable();
             HasMany(x => x.appointments).Cascade.AllDeleteOrphan().LazyLoad().Inverse(); 
             HasMany(x=>x.CheckupHistory).Cascade.AllDeleteOrphan().LazyLoad().Inverse(); 
         }

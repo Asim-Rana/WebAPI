@@ -617,6 +617,7 @@ namespace ClinicalWebApi2.Controllers
                 doc.Name = generalModel.Name;
                 doc.Phone = generalModel.PhoneNumber;
                 doc.Speciality = generalModel.Speciality;
+                doc.Gender = generalModel.Gender;
 
                 using (var client = new HttpClient())
                 {
@@ -636,6 +637,7 @@ namespace ClinicalWebApi2.Controllers
                 pat.Age = generalModel.Age;
                 pat.Name = generalModel.Name;
                 pat.Phone = generalModel.PhoneNumber;
+                pat.Gender = generalModel.Gender;
 
                 using (var client = new HttpClient())
                 {

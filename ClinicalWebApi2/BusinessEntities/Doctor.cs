@@ -29,7 +29,8 @@ namespace ClinicalWebApi2.BusinessEntities
         [RegularExpression(@"^(\+92)\d{3}\d{7}$", ErrorMessage = "Entered phone format is not valid.")]
         [DataType(DataType.PhoneNumber)]
         public virtual string Phone { get; set; }
-
+        [DataType(DataType.Text)]
+        public virtual string Gender { get; set; }
         public virtual IList<Appointment> AssignedAppointments { get; protected set; }
         public virtual IList<PatientHistory> ExaminedPatients { get; protected set; }
 
