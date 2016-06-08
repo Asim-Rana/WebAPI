@@ -47,8 +47,8 @@ namespace ClinicalWebApi2.Providers
                OAuthDefaults.AuthenticationType);
             ClaimsIdentity cookiesIdentity = await user.GenerateUserIdentityAsync(userManager,
                 CookieAuthenticationDefaults.AuthenticationType);
-
-            AuthenticationProperties properties = CreateProperties(user.Email);
+            var roles = await userManager.GetRolesAsync(user.Id);
+            AuthenticationProperties properties = CreateProperties(user.Email , roles.First());
             AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
             context.Validated(ticket);
             context.Request.Context.Authentication.SignIn(cookiesIdentity);
@@ -90,11 +90,12 @@ namespace ClinicalWebApi2.Providers
             return Task.FromResult<object>(null);
         }
 
-        public static AuthenticationProperties CreateProperties(string userName)
+        public static AuthenticationProperties CreateProperties(string userName , string role="")
         {
             IDictionary<string, string> data = new Dictionary<string, string>
             {
-                { "userName", userName }
+                { "userName", userName },
+                { "role" , role}
             };
             return new AuthenticationProperties(data);
         }
