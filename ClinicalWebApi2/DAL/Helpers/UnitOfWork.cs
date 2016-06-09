@@ -16,18 +16,22 @@ namespace ClinicalWebApi2.DAL.Helpers
     {
         private static readonly ISessionFactory _sessionFactory;
         private ITransaction _transaction;
+        private static object lockedObject = new object();
 
         private ISession Session { get; set; }
 
         static UnitOfWork()
         {
             var MappingAssemblies = AppDomain.CurrentDomain.GetAssemblies().Where(a => a.FullName.StartsWith("DAL")).ToList();
-            _sessionFactory = Fluently.Configure()
-                .Database(MsSqlConfiguration.MsSql2008.ConnectionString(x => x.FromConnectionStringWithKey("connstring")).ShowSql())
-                .CurrentSessionContext("web")
-                .Mappings(m => MappingAssemblies.ForEach(a => m.FluentMappings.AddFromAssembly(a)))
-                .ExposeConfiguration(config => new SchemaUpdate(config).Execute(true, true))
-                .BuildSessionFactory();
+            lock (lockedObject)
+            {
+                _sessionFactory = Fluently.Configure()
+                        .Database(MsSqlConfiguration.MsSql2008.ConnectionString(x => x.FromConnectionStringWithKey("connstring")).ShowSql())
+                        .CurrentSessionContext("web")
+                        .Mappings(m => MappingAssemblies.ForEach(a => m.FluentMappings.AddFromAssembly(a)))
+                        .ExposeConfiguration(config => new SchemaUpdate(config).Execute(true, true))
+                        .BuildSessionFactory(); 
+            }
         }
         public static ISession CurrentSession
         {
@@ -47,6 +51,7 @@ namespace ClinicalWebApi2.DAL.Helpers
         }
         public static void CloseSession()
         {
+            
             if (_sessionFactory == null)
             {
                 return;
@@ -58,11 +63,13 @@ namespace ClinicalWebApi2.DAL.Helpers
 
                 session.Clear();
                 session.Close();
-                
-            }
+
+            } 
+            
         }
         public void BeginTransaction()
         {
+            
             try
             {
                 Session = CurrentSession;
@@ -71,11 +78,13 @@ namespace ClinicalWebApi2.DAL.Helpers
             catch (Exception)
             {
                 throw;
-            }
+            } 
+           
         }
 
         public void Commit()
         {
+            
             Session = CurrentSession;
             _transaction = Session.Transaction;
             if (_transaction != null && _transaction.IsActive)
@@ -94,7 +103,8 @@ namespace ClinicalWebApi2.DAL.Helpers
                 {
                     CloseSession();
                 }
-            }
+            } 
+            
         }
     }
 }
