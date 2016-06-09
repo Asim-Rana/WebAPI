@@ -38,6 +38,13 @@ namespace ClinicalWebApi2.BusinessEntities
         [DataType(DataType.Text)]
         public virtual string Address { get; set; }
 
+        [Required(ErrorMessage = "Please Enter Your Experience")]
+        [DataType(DataType.Text)]
+        public virtual string Experience { get; set; }
+
+        [Required(ErrorMessage = "Please Enter Your Training")]
+        [DataType(DataType.Text)]
+        public virtual string Training { get; set; }
         public Doctor()
         {
             AssignedAppointments = new List<Appointment>();

@@ -92,6 +92,8 @@ namespace ClinicalWebApi2.DAL.Services
             doc.Education = doctor.Education;
             doc.Address = doctor.Address;
             doc.Gender = doctor.Gender;
+            doc.Training = doctor.Training;
+            doc.Experience = doctor.Experience;
             if(!_doctorRepository.Update(doc))
             {
                 return 1;
